@@ -21,6 +21,7 @@
     etcBackupExtension = ".bak";
     packages = with pkgs; [
       any-nix-shell
+      eza
       vim
       nyancat
       neovim
@@ -28,6 +29,7 @@
       gnumake
       openssh
       fastfetch
+      which
       yazi
       zed
       zip
@@ -52,7 +54,6 @@
             ll = "eza";
             tree = "eza -T";
             clock = "tty-clock -s -c -C 6 -t ";
-            cd = "z";
           };
         };
 
