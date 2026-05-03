@@ -2,12 +2,12 @@
   description = "Sol's OS, Fiat Nix!";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
-    nix-on-droid.url = "github:nix-community/nix-on-droid/release-24.05";
+    nix-on-droid.url = "github:nix-community/nix-on-droid/prerelease-25.11";
     nix-on-droid.inputs.nixpkgs.follows = "nixpkgs";
 
-    home-manager.url = "github:nix-community/home-manager/release-24.05";
+    home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
