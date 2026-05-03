@@ -43,31 +43,31 @@
     font = "${
       pkgs.nerdfonts.override { fonts = [ "DejaVuSansMono" ]; }
     }/share/fonts/truetype/NerdFonts/DejaVuSansMonoNerdFont-Regular.ttf";
-    colors = {
-      background = "#000000"; # Black
-      foreground = "#CCCCCC"; # Grey
-      cursor = "#FFFFFF"; # White
+colors = {
+    background = "#000000"; # base00
+    foreground = "#c1c8d7"; # base05
+    cursor     = "#c1c8d7"; # base05
 
-      # Basic Colors
-      color0 = "#000000"; # Black
-      color1 = "#AA0000"; # Red
-      color2 = "#00AA00"; # Green
-      color3 = "#AA5500"; # Yellow (Brown)
-      color4 = "#0000AA"; # Blue
-      color5 = "#AA00AA"; # Magenta
-      color6 = "#00AAAA"; # Cyan
-      color7 = "#AAAAAA"; # White (Light Gray)
+    # Normal colors
+    color0  = "#000000"; # Black (base00)
+    color1  = "#f71118"; # Red (base08)
+    color2  = "#2cc55d"; # Green (base0B)
+    color3  = "#ecb90f"; # Yellow (base09)
+    color4  = "#2a84d2"; # Blue (base0D)
+    color5  = "#4e59b7"; # Magenta (base0E)
+    color6  = "#0f80d5"; # Cyan (base0C)
+    color7  = "#c1c8d7"; # White (base05)
 
-      # Highlights
-      color8 = "#555555"; # Dark Gray
-      color9 = "#FF5555"; # Light Red
-      color10 = "#55FF55"; # Light Green
-      color11 = "#FFFF55"; # Light Yellow
-      color12 = "#5555FF"; # Light Blue
-      color13 = "#FF55FF"; # Light Magenta
-      color14 = "#55FFFF"; # Light Cyan
-      color15 = "#FFFFFF"; # Bright White
-    };
+    # Bright colors 
+    color8  = "#343d50"; # Bright Black / Gray (base03)
+    color9  = "#ff0000"; # Bright Red (base12)
+    color10 = "#00ff00"; # Bright Green (base14)
+    color11 = "#ffff00"; # Bright Yellow (base13)
+    color12 = "#0000ff"; # Bright Blue (base16)
+    color13 = "#ff00ff"; # Bright Magenta (base17)
+    color14 = "#00ffff"; # Bright Cyan (base15)
+    color15 = "#ffffff"; # Bright White (base07)
+  };
   };
 
   home-manager = {
