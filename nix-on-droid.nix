@@ -40,7 +40,34 @@
   user.shell = "${pkgs.fish}/bin/fish";
 
   terminal = {
-    font = "${pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; }}/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
+    font = "${
+      pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; }
+    }/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
+    colors = {
+      background = "#000000"; # Black
+      foreground = "#CCCCCC"; # Grey
+      cursor = "#FFFFFF"; # White
+
+      # 基础 8 色 (暗色系)
+      color0 = "#000000"; # Black
+      color1 = "#AA0000"; # Red
+      color2 = "#00AA00"; # Green
+      color3 = "#AA5500"; # Yellow (Brown)
+      color4 = "#0000AA"; # Blue
+      color5 = "#AA00AA"; # Magenta
+      color6 = "#00AAAA"; # Cyan
+      color7 = "#AAAAAA"; # White (Light Gray)
+
+      # 亮色 8 色 (高亮系)
+      color8 = "#555555"; # Dark Gray
+      color9 = "#FF5555"; # Light Red
+      color10 = "#55FF55"; # Light Green
+      color11 = "#FFFF55"; # Light Yellow
+      color12 = "#5555FF"; # Light Blue
+      color13 = "#FF55FF"; # Light Magenta
+      color14 = "#55FFFF"; # Light Cyan
+      color15 = "#FFFFFF"; # Bright White
+    };
   };
 
   home-manager = {
