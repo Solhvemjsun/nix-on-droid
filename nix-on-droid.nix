@@ -41,14 +41,14 @@
 
   terminal = {
     font = "${
-      pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; }
-    }/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
+      pkgs.nerdfonts.override { fonts = [ "DejaVuSansMono" ]; }
+    }/share/fonts/truetype/NerdFonts/DejaVuSansMonoNerdFont-Regular.ttf";
     colors = {
       background = "#000000"; # Black
       foreground = "#CCCCCC"; # Grey
       cursor = "#FFFFFF"; # White
 
-      # 基础 8 色 (暗色系)
+      # Basic Colors
       color0 = "#000000"; # Black
       color1 = "#AA0000"; # Red
       color2 = "#00AA00"; # Green
@@ -58,7 +58,7 @@
       color6 = "#00AAAA"; # Cyan
       color7 = "#AAAAAA"; # White (Light Gray)
 
-      # 亮色 8 色 (高亮系)
+      # Highlights
       color8 = "#555555"; # Dark Gray
       color9 = "#FF5555"; # Light Red
       color10 = "#55FF55"; # Light Green
