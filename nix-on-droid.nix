@@ -39,6 +39,10 @@
 
   user.shell = "${pkgs.fish}/bin/fish";
 
+  terminal = {
+    font = "${pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; }}/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
+  };
+
   home-manager = {
     config =
       { ... }:
