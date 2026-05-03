@@ -1,0 +1,1 @@
+Fuck nix-on-droid
