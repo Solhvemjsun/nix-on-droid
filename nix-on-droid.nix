@@ -20,7 +20,7 @@
     '';
     etcBackupExtension = ".bak";
     packages = with pkgs; [
-      any-nix-shell
+      # any-nix-shell
       eza
       vim
       nyancat
@@ -77,10 +77,10 @@ colors = {
         home.stateVersion = "24.05";
         programs.fish = {
           enable = true;
-          interactiveShellInit = ''
-            ${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source
-            set fish_greeting ""
-          '';
+          # interactiveShellInit = ''
+          #   ${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source
+          #   set fish_greeting ""
+          # '';
           shellAliases = {
             ll = "eza";
             tree = "eza -T";
